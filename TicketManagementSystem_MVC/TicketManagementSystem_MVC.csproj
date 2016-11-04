@@ -161,11 +161,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201611040040262_ColNameChanged.cs" />
-    <Compile Include="Migrations\201611040040262_ColNameChanged.Designer.cs">
-      <DependentUpon>201611040040262_ColNameChanged.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Helpers\HelperClass.cs" />
     <Compile Include="Models\TicketModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -226,11 +222,6 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Ticket\Create.cshtml" />
     <Content Include="Views\Ticket\Index.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201611040040262_ColNameChanged.resx">
-      <DependentUpon>201611040040262_ColNameChanged.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

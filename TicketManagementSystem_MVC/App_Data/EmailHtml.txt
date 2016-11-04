@@ -1,0 +1,28 @@
+﻿<table style="width:40%; font-family:verdana;" border="2" cellpadding="5px" cellspacing="1px">
+    <tr><td style="background-color: lightblue; font-weight:bold;" colspan="2"><p>
+        Ticket number: {5}</p>
+        <p>
+            Date: {6}
+        </p>
+    </td></tr>
+<tr>
+<td style="font-weight:bold">Name</td>
+<td>{0}</td>
+</tr>
+<tr>
+<td style="font-weight:bold">Email</td>
+<td>{1}</td>
+</tr>
+<tr>
+<td style="font-weight:bold">Model Number</td>
+<td>{2}</td>
+</tr>
+<tr>
+<td style="font-weight:bold">Subject</td>
+<td>{3}</td>
+</tr>
+<tr>
+<td style="font-weight:bold">Description</td>
+<td>{4}</td>
+</tr>
+</table>

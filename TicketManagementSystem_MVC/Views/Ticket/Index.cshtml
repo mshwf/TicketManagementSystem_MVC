@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Support";
+}
+@{if (ViewBag.IfcText == "hello")
+    {
+        <h2>Encountering a problem? We are here to help</h2>
+        <h3>
+            @Html.ActionLink("Contact our Support Team", "Create")
+        </h3>
+    }
+    else if (ViewBag.IfcText == "done")
+    {
+        @:<h2>We received it, we will be in contact with you in 24 hrs.</h2>
+    }
+}

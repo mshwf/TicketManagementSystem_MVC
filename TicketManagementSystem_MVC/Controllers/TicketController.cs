@@ -54,13 +54,20 @@ namespace TicketManagementSystem_MVC.Controllers
                 message.Subject = string.Format($"New from support center - [{ticket.Subject}]");
                 message.Body = string.Format(body, ticket.OwnerName, ticket.Email, ticket.LaptopModelNumber, ticket.Subject, ticket.Description, ticket.TicketNumber, ticket.TicketDate);
                 message.IsBodyHtml = true;
-
-                using (var smtp = new SmtpClient())
+                try
                 {
-                    smtp.Send(message);
-                    TempData[ticketSentKey] = true;
-                    return RedirectToAction("Index");
+                    using (var smtp = new SmtpClient())
+                    {
+                        smtp.Send(message);
+                        TempData[ticketSentKey] = true;
+                        return RedirectToAction("Index");
+                    }
 
+                }
+                catch (SmtpFailedRecipientException)
+                {
+                    ViewBag.ErrorInfo = "SMTP server cannot proceed your request now, try again later.";
+                    return View("Error");
                 }
             }
 

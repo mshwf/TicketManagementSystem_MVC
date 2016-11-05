@@ -1,8 +1,8 @@
 ﻿<table style="width:40%; font-family:verdana;" border="2" cellpadding="5px" cellspacing="1px">
-    <tr><td style="background-color: lightblue; font-weight:bold;" colspan="2"><p>
-        Ticket number: {5}</p>
+    <tr><td style="background-color: #c8f1ff; font-weight:bold;" colspan="2"><p>
+        Ticket number: <span style="color:blue;">{5}</span></p>
         <p>
-            Date: {6}
+            Date: <span style="color:blue;">{6}</span>
         </p>
     </td></tr>
 <tr>

@@ -8,7 +8,7 @@ namespace TicketManagementSystem_MVC.Helper
 {
     public class HelperClass
     {
-        public static string CreatePassword(int length)
+        public static string GenerateCode(int length)
         {
             const string valid = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
             StringBuilder res = new StringBuilder();

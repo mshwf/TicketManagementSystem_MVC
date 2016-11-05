@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity;
-using System.IO;
-using System.Linq;
-using System.Net;
-using System.Net.Mail;
-using System.Web;
+﻿using System.Net.Mail;
 using System.Web.Mvc;
 using TicketManagementSystem_MVC.DAL;
 using TicketManagementSystem_MVC.Models;
@@ -37,8 +29,6 @@ namespace TicketManagementSystem_MVC.Controllers
         }
 
         // POST: Ticket/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "OwnerName,Email,LaptopModelNumber,Subject,Description")] Ticket ticket)
